@@ -8,4 +8,9 @@ public class Administrativo extends Assistente{
         this.turno = turno;
         this.adicionalNoturno = adicionalNoturno;
     }
+
+    @Override
+    public String exibeDados(){
+        return super.exibeDados()+"\nTurno: " + turno + "\nAdicional noturno: " + adicionalNoturno;
+    }
 }

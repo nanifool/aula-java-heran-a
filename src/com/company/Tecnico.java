@@ -6,4 +6,9 @@ public class Tecnico extends Assistente{
         super(nome, matricula, horas);
         this.bonusSalarial = bonusSalarial;
     }
+
+    @Override
+    public String exibeDados(){
+        return super.exibeDados()+"\nBonus salarial: " + bonusSalarial;
+    }
 }
